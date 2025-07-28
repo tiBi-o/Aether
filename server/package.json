@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "start:ci": "ts-node ./bin/www.ts",
+    "dev:ci": "DEBUG=* ts-node ./bin/www.ts",
+
+    "lint": "eslint . --ext .ts",
+
     "start": "node index.js",
     "dev": "nodemon index.js",
+    
     "test": "vitest",
     "test:run": "vitest run",
     "test:watch": "vitest",
